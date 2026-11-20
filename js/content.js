@@ -9,7 +9,7 @@ window.CONFIG = {
   // 1) Crea un formulario gratis en https://formspree.io (con tu correo),
   //    copia el código que te dan (ej: "xyzabcd") y pégalo aquí.
   //    Así te llegan por correo sus respuestas y su mensaje.
-  formspreeId: "",
+  formspreeId: "xwloqdrb",
 
   // 2) (Opcional) Tu número de WhatsApp con indicativo, sin "+" ni espacios.
   //    Ej: "573001234567". Al final aparecerá un botón para que ella te
