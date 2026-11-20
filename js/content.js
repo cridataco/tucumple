@@ -17,7 +17,7 @@ window.CONFIG = {
   whatsapp: "",
 
   // Cómo firmas tú
-  firma: "Tu amigo de siempre",
+  firma: "Tu amigo autista, Tamagodchi",
 };
 
 window.CONTENT = {
@@ -43,22 +43,23 @@ window.CONTENT = {
       no: "Respeto. Que conste que el cuerpo todavía aguanta toda la noche… lo que ya no aguanta es el lunes.",
     },
     {
-      tono: "Física aplicada",
-      q: "¿Ya te pasó que te agachas a recoger algo y aprovechas para ver qué más hay por allá abajo, para no desperdiciar el viaje?",
-      si: "Eso se llama madurez: ya no se baja por cualquier cosa, y cuando se baja, se aprovecha.",
-      no: "Ya te va a pasar. Llega un punto en la vida en el que bajar es facilísimo… lo difícil es volver a subir.",
+      tono: "Humor de sistemas",
+      q: "¿Quieres que te cuente un chiste de TCP o uno de UDP?",
+      etiquetas: ["TCP", "UDP"],
+      si: "Te lo cuento. ¿Lo recibiste? ¿Seguro? Va otra vez. A ver otra vez. Otra vez... Hasta que me confirmes que llegó, que para eso tenemos handshake.",
+      no: "Sin saludo, sin compromiso y sin preguntar si llegó: mando el paquete, me volteo y a otra cosa. Rapidito, directo y con cero garantías de entrega. Mucho éxito en el streaming, poco en las relaciones. Contigo no: contigo hago handshake completo, confirmo que llegó y me quedo a ver cómo te cayó. (Perdón)",
     },
     {
       tono: "Economía doméstica",
       q: "¿Ya miras el precio de las cosas y se te escapa un «en mis tiempos…»?",
-      si: "Felicitaciones, ya eres oficialmente una señora de bien. Solo te faltan la matica en la ventana y el chisme fresco de la vecina.",
+      si: "Felicitaciones, ya eres oficialmente una jovencita de bien. Solo te faltan la matica en la ventana y el chisme fresco de la vecina.",
       no: "Dale un año. El arriendo se encarga del resto.",
     },
     {
       tono: "Pregunta seria (no tanto)",
-      q: "¿Te siguen gustando grandes, aunque ya no tengas la energía de antes?",
-      si: "Hablo de las tortas, Karen. Tranquila. …Aunque esa sonrisita me acaba de confirmar que pensaste en otra cosa.",
-      no: "Mentirosa. A nadie le gusta una torta pequeñita en su cumpleaños. Y a ti menos.",
+      q: "¿Te siguen gustando grandes, aunque ya no tengas el pensamiento de antes?",
+      si: "Hablo de tus sueños, Karen. Tranquila.",
+      no: "Mentirosa. A nadie le gusta soñar metas pequeñas. Y a ti menos.",
     },
     {
       tono: "Deportes extremos",
@@ -75,7 +76,7 @@ window.CONTENT = {
     },
     {
       tono: "Un recuerdo",
-      q: "¿Te acuerdas de aquella noche de la pijama azul y la pijama negra?",
+      q: "¿Te acuerdas de aquella noche de la pijama azul y la pijama negra? (Pijamada)",
       si: "Yo tampoco la olvido. Tú no lo viste, pero esa noche mi habitación se llenó de estrellas.",
       no: "Yo me acuerdo por los dos: tú llevabas mi pijama negra, yo la azul, y esa noche entendí que por fin tenía una mejor amiga.",
     },
@@ -103,9 +104,9 @@ window.CONTENT = {
 
   /* Palabras que vuelan por el túnel */
   tunel: [
-    "pijama negra", "una nebulosa", "latidos rotos", "miércoles, 3 p. m.",
+    "pijama negra", "una nebulosa", "latidos rotos", "tus hermosos defectos",
     "mejor amiga", "café y rutinas", "un ancla", "almas conectadas",
-    "coincidencia universal", "pedacitos de alma", "5 de abril", "tus hermosos defectos",
+    "coincidencia universal", "pedacitos de alma", "5 de abril", "diferente",
     "existir mientras miramos un paisaje", "sueños cumplidos", "abrazos", "gracias por todo",
     "estrellas en la habitación", "semillas", "lo más bonito que he sembrado", "nosotros",
   ],
