@@ -1,8 +1,6 @@
 # Para Karen ✦
 
-Una experiencia de cumpleaños en una sola página estática: portada art déco, preguntas, túnel de recuerdos, archivo de cartas, un espacio para que ella escriba y un final en una nebulosa donde enciende estrellas.
-
-No usa librerías ni archivos de audio: la música ambiental se genera en vivo en el navegador y el fondo es un shader WebGL. Todo junto pesa menos de 100 KB.
+Una experiencia de cumpleaños en una sola página estática
 
 ## Estructura
 
