@@ -33,7 +33,7 @@ window.CONTENT = {
     {
       tono: "Calentando motores",
       q: "¿Estás lista para que el dolor de espalda deje de ser una enfermedad y se vuelva un estilo de vida?",
-      si: "Así me gusta. A esta edad uno ya no se agacha por cualquier cosa… solo por lo que de verdad vale la pena.",
+      si: "Así me gusta. A esta edad (joven) uno ya no se agacha por cualquier cosa… solo por lo que de verdad vale la pena.",
       no: "Tarde. Tu espalda ya firmó por ti. Desde ahora toca escoger con mucha sabiduría en qué posición pasas las noches.",
     },
     {
@@ -47,13 +47,13 @@ window.CONTENT = {
       q: "¿Quieres que te cuente un chiste de TCP o uno de UDP?",
       etiquetas: ["TCP", "UDP"],
       si: "Te lo cuento. ¿Lo recibiste? ¿Seguro? Va otra vez. A ver otra vez. Otra vez... Hasta que me confirmes que llegó, que para eso tenemos handshake.",
-      no: "Sin saludo, sin compromiso y sin preguntar si llegó: mando el paquete, me volteo y a otra cosa. Rapidito, directo y con cero garantías de entrega. Mucho éxito en el streaming, poco en las relaciones. Contigo no: contigo hago handshake completo, confirmo que llegó y me quedo a ver cómo te cayó. (Perdón)",
+      no: "Karen no contesta... ¿Karen? ¿Karen? ¿Karen? Que raro, creo que no hicimos handshake. Ah no, es que nos conocimos en modo UDP, ¿Cómo lo había pensado antes? (mentiras jajaja)",
     },
     {
       tono: "Economía doméstica",
       q: "¿Ya miras el precio de las cosas y se te escapa un «en mis tiempos…»?",
       si: "Felicitaciones, ya eres oficialmente una jovencita de bien. Solo te faltan la matica en la ventana y el chisme fresco de la vecina.",
-      no: "Dale un año. El arriendo se encarga del resto.",
+      no: "Dale un año. El arriendo se encarga del resto (Y una lavadora a cuotas).",
     },
     {
       tono: "Pregunta seria (no tanto)",
@@ -64,7 +64,7 @@ window.CONTENT = {
     {
       tono: "Deportes extremos",
       q: "¿Crees que a esta edad todavía se pueden hacer locuras?",
-      si: "Claro que sí. Ayer me tomé un café después de las seis de la tarde y aquí sigo, vivo de milagro.",
+      si: "Claro que sí. Compré una lavadora a cuotas sin trabajo y creímos que el amor era real a esta edad. Vaya locura...",
       no: "Correcto. La última locura fue quedarnos despiertos hablando hasta la una de la mañana, y todavía la estamos pagando.",
     },
     {
