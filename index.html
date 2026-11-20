@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Para Karen ✦</title>
+<meta name="description" content="Un pequeño viaje de cumpleaños.">
+<meta name="theme-color" content="#04121a">
+<meta property="og:title" content="Para Karen ✦">
+<meta property="og:description" content="Un pequeño viaje de cumpleaños. Sube el volumen.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Poiret+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="gl" aria-hidden="true"></canvas>
+<canvas id="fx" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="veil" id="veil" aria-hidden="true"></div>
+<div class="cursor-light" id="cursorLight" aria-hidden="true"></div>
+
+<button class="sound" id="soundBtn" aria-label="Silenciar / activar música" hidden>
+  <span></span><span></span><span></span><span></span>
+</button>
+
+<!-- ============ PORTADA ============ -->
+<section class="scene active" id="s-intro">
+  <svg class="sunburst" id="sunburst" viewBox="-500 -500 1000 1000" aria-hidden="true"></svg>
+  <div class="intro-inner">
+    <p class="kicker reveal-up" style="--d:.3s">Un pequeño viaje para</p>
+    <h1 class="title-name" id="titleName" aria-label="Karen"></h1>
+    <p class="title-sub reveal-up" style="--d:1.6s"><em id="titleSur"></em></p>
+    <div class="ornament reveal-up" style="--d:2s" aria-hidden="true"><i></i><b>✦</b><i></i></div>
+
+    <button class="hold" id="enterBtn" aria-label="Mantén presionado para entrar">
+      <svg viewBox="0 0 120 120" aria-hidden="true">
+        <circle class="hold-track" cx="60" cy="60" r="54"/>
+        <circle class="hold-fill" id="holdFill" cx="60" cy="60" r="54"/>
+      </svg>
+      <span class="hold-label">Mantén<br>presionado</span>
+    </button>
+    <p class="hint reveal-up" style="--d:2.6s">Sube el volumen, ponte cómoda. Esto es para ti.</p>
+    <p class="fineprint reveal-up" style="--d:3s">(Lo que respondas me llega a mí, así que responde con honestidad… o con picardía.)</p>
+  </div>
+</section>
+
+<!-- ============ PREGUNTAS ============ -->
+<section class="scene" id="s-quiz" aria-live="polite">
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="quiz-stage">
+    <p class="q-tone" id="qTone"></p>
+    <h2 class="q-text" id="qText"></h2>
+    <div class="q-buttons" id="qButtons">
+      <button class="deco-btn" id="btnSi"><span>Sí</span></button>
+      <button class="deco-btn" id="btnNo"><span>No</span></button>
+    </div>
+    <div class="q-answer" id="qAnswer"></div>
+    <button class="next-btn" id="qNext" hidden>Continuar <span aria-hidden="true">⟶</span></button>
+  </div>
+  <p class="q-count" id="qCount"></p>
+</section>
+
+<!-- ============ TÚNEL ============ -->
+<section class="scene" id="s-tunnel" aria-hidden="true">
+  <div class="tunnel-words" id="tunnelWords"></div>
+  <p class="tunnel-phrase" id="tunnelPhrase"></p>
+</section>
+
+<!-- ============ CARTAS ============ -->
+<section class="scene scroll" id="s-letters">
+  <div class="thread" aria-hidden="true"><div class="thread-fill" id="threadFill"></div></div>
+  <header class="letters-head">
+    <p class="kicker">El archivo de lo que sentimos</p>
+    <h2 class="letters-title">Química<br><em>convertida en palabras</em></h2>
+    <p class="letters-intro">Cosas que te escribí en cumpleaños y en noches que nos movieron el alma. Todo esto ya lo leíste alguna vez; hoy quería que lo vieras junto, como se ve un camino cuando por fin miras hacia atrás.</p>
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </header>
+  <div id="lettersBody"></div>
+  <footer class="letters-end">
+    <p class="big-quote">Y todavía nos falta<br><em>tanto por escribir.</em></p>
+    <button class="deco-btn wide" id="toVoice"><span>Seguir subiendo</span></button>
+  </footer>
+</section>
+
+<!-- ============ SU ESPACIO ============ -->
+<section class="scene" id="s-voice">
+  <div class="voice-inner">
+    <p class="kicker">Este espacio es tuyo</p>
+    <h2 class="voice-title">Si quieres decir algo,<br><em>suéltalo aquí.</em></h2>
+    <p class="voice-sub">Si no, también está bien. No tienes que buscar palabras: puedes seguir tu camino.</p>
+    <div class="paper">
+      <textarea id="herText" rows="6" placeholder="Escribe lo que sientas…" maxlength="4000"></textarea>
+      <div class="paper-glow" aria-hidden="true"></div>
+    </div>
+    <div class="voice-actions">
+      <button class="deco-btn" id="sendText"><span>Soltar mis palabras ✦</span></button>
+      <button class="ghost-btn" id="skipText">Seguir mi camino <span aria-hidden="true">⟶</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL ============ -->
+<section class="scene" id="s-final">
+  <div class="final-inner">
+    <p class="kicker final-k">✦</p>
+    <h2 class="final-title" id="finalTitle"></h2>
+    <p class="final-name" id="finalName"></p>
+    <p class="final-line" id="finalLine"></p>
+    <p class="final-instr" id="finalInstr"></p>
+    <p class="final-const" id="finalConst"></p>
+    <div class="final-actions" id="finalActions">
+      <a class="ghost-btn" id="waBtn" target="_blank" rel="noopener" hidden>Contarle lo que respondí</a>
+      <button class="ghost-btn" id="restartBtn">Volver a empezar ↺</button>
+    </div>
+    <p class="signature" id="signature"></p>
+  </div>
+</section>
+
+<noscript><p style="position:fixed;inset:auto 0 2rem;text-align:center;color:#f3e9d8">Activa JavaScript para vivir esta página ✦</p></noscript>
+
+<script src="js/content.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/gl.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
